@@ -10,26 +10,104 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <title>C-Helix</title>
     <style>
+        #cw {
+  position: fixed;
+  z-index: -1;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.add{
+    /* z-index: -1; */
+    /* background-color: rgba(0, 0, 0, 0.363); */
+    padding: 13px;
+    border-radius: 100px;
+    border: 1px solid white;
+}
+.add:hover{
+    /* z-index: -1; */
+    /* background-color: rgba(0, 0, 0, 0.363); */
+    padding: 13px;
+    background-color: #ffffff;
+    border-radius: 100px;
+    border: 1px solid white;
+}
+.add2{
+    align-items: center;
+    justify-content: center;
+
+}
+.add3{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+svg{
+    fill: blanchedalmond;
+    align-items: center;
+}
+
         .my4{
             padding: 0px;
             top: 0;
             right: 0;
             left: 0;
         }
+        .my44{
+            padding: 0px;
+            top: 0;
+            right: 0;
+            left: 0;
+        }
+        #home{
+            display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+            
+
+        }
+        #home::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 90%;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+        .logo{
+            background-image: url('logo.svg');
+            background-position: 50%;
+            background-size: contain;
+            width: 30%;
+            background-repeat: no-repeat;
+            margin-top: -5em;
+            z-index: -1;
+        }
+        
         .center{
     text-align: center;
     font-family: 'Sans', cursive;
     color: white;
-    background-color: black;
+    /* background-color: black; */
 }
         .my6{
             padding: 12px;
             background-color: rgba(220, 45, 255, 0.075);
         }
         .my{
-            color: rgb(140, 26, 247);
+            color: rgb(189, 119, 255);
             font-weight: bolder;
             font-family: 'Baloo Bhaijaan 2', cursive;
             font-size: 2.5rem;
@@ -97,7 +175,7 @@
 }
 body .footer {
   z-index: 1;
-  --footer-background:#de82f5;
+  --footer-background:#e580ff;
   display: grid;
   position: relative;
   grid-area: footer;
@@ -206,7 +284,7 @@ body .footer .content > div .image {
             
         </div> -->
         
-        <nav id="home" class="navbar navbar-expand-lg navbar-light bg-light my4">
+        <nav id="home" class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
         <div class="container-fluid my6">
           <a class="navbar-brand" href="#"><span class="my">C-</span><span class="my1">Helix</span></a>
           <button class="navbar-toggler my7" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-align-left"></i>
@@ -248,15 +326,15 @@ body .footer .content > div .image {
             </li> -->
             </ul>
             
-            <form class="d-flex">
+            <!-- <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Explore more!" aria-label="Search">
-              <button type="button" class="btn btn-outline-dark">GO</button>
-            </form>
+              <button type="button" class="btn btn-outline-light">GO</button>
+            </form> -->
           </div>
         </div>
     </nav>
     
-    <div class="container">
+    <div class="container my10">
 
         <div id="carouselExampleCaptions" class="carousel slide my4 carousel-fade" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -297,6 +375,10 @@ body .footer .content > div .image {
         </button>
     </div>
 </div>  
+
+<canvas id="cw"></canvas>
+
+    <script src="canvas.js"></script>
     
     <div id="projects">
          
@@ -493,14 +575,23 @@ body .footer .content > div .image {
     <div class="bubble" style="--size:4.594196696674772rem; --distance:8.650979761527038rem; --position:54.97460558940576%; --time:2.23326760519478s; --delay:-2.3306454979853823s;"></div>
   </div>
   <div class="content">
-    <div>
-<!--       <div>
-        <b>C-Helix</b>
-        <a href="#">Instagram</a>
-        <a href="#">Youtube</a>
-        </div> -->
-      
-    </div>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 add2">
+        <div class=" add3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="101px" height="11px"> <path fill-rule="evenodd" d="M59.669,10.710 L49.164,3.306 L39.428,10.681 L29.714,3.322 L20.006,10.682 L10.295,3.322 L1.185,10.228 L-0.010,8.578 L10.295,0.765 L20.006,8.125 L29.714,0.765 L39.428,8.125 L49.122,0.781 L59.680,8.223 L69.858,1.192 L70.982,2.895 L59.669,10.710 Z"></path></svg></div>
+        <div class="col-md-4 d-flex align-items-center">
+          <!-- <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a> -->
+          <span class="text-muted"><img src="helix logo (1).png" alt="C-Helix" width="330rem" height="328rem"></span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex add1">
+         
+          <li class="ms-3 add"><a class="text-muted" href="#"><img src="linkedin-in-brands.svg" alt="Linkedin" srcset="" width="30" height="30"></a></li>
+          <li class="ms-3 add"><a class="text-muted" href="#"><img src="instagram-brands.svg" alt="Instagram" srcset="" width="30" height="30"></a></li>
+          <li class="ms-3 add"><a class="text-muted" href="#"><img src="facebook-brands.svg" alt="Facebook" srcset="" width="30" height="30"></a></li>
+        </ul>
+      </footer>
+    
     
   </div>
 </div>
