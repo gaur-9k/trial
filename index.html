@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+     <link rel="icon" href="/fevicon.png">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -159,6 +160,23 @@ svg{
   color: white;
   text-align: center; */
 }
+      .backlink{
+          cursor: pointer;
+        }
+      .myfooter{
+            color: rgb(227, 137, 255);
+            font-weight: bolder;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            font-size: 1.6rem;
+        }
+        .my1footer{
+            /* color: rgb(140, 26, 247); */
+            font-size: 1.6rem;
+            font-weight: bolder;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            color: white;
+            
+        }
 #bg{
     background: rgb(0, 0, 0);
 }
@@ -223,22 +241,22 @@ body .footer {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 my4">
               <li class="nav-item my2">
-                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
               <li class="nav-item my2">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item my2">
-                <a class="nav-link" href="#">Events</a>
-              </li>
-              <li class="nav-item my2">
-                  <a class="nav-link" href="#">Workshops</a>
+                <a class="nav-link" href="#events">Events</a>
               </li>
               <li class="nav-item my2">
                   <a class="nav-link" href="#projects">Projects</a>
               </li>
               <li class="nav-item my2">
-                <a class="nav-link" href="#">Contact Us</a>
+                  <a class="nav-link" href="#workshops">Workshops</a>
+              </li>
+              <li class="nav-item my2">
+                <a class="nav-link" href="#contact">Contact Us</a>
               </li>
              
             </ul>
@@ -513,23 +531,23 @@ body .footer {
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
     
-  <div class="content bg1">
+  <div id="contact" class="content bg1">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 add2">
         <div class="mx-400 add3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="101px" height="11px"> <path fill-rule="evenodd" d="M59.669,10.710 L49.164,3.306 L39.428,10.681 L29.714,3.322 L20.006,10.682 L10.295,3.322 L1.185,10.228 L-0.010,8.578 L10.295,0.765 L20.006,8.125 L29.714,0.765 L39.428,8.125 L49.122,0.781 L59.680,8.223 L69.858,1.192 L70.982,2.895 L59.669,10.710 Z"></path></svg></div>
         <div class="col-md-4 d-flex align-items-center container">
         
-          <span class="text-muted"><img src="logo_helix.png" alt="C-Helix" width="250rem" height="228rem"></span>
+          <span class="text-muted"><img src="logo_helix.png" alt="C-Helix" width="265rem" height="265rem"></span>
         </div>
     
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex add1 container">
          
-          <li class="ms-3 add"><a class="text-muted" href="#"><img src="linkedin-in-brands.svg" alt="Linkedin" srcset="" width="30" height="30"></a></li>
-          <li class="ms-3 add"><a class="text-muted" href="#"><img src="instagram-brands.svg" alt="Instagram" srcset="" width="30" height="30"></a></li>
-          <li class="ms-3 add"><a class="text-muted" href="#"><img src="facebook-brands.svg" alt="Facebook" srcset="" width="30" height="30"></a></li>
+          <li class="ms-3 add addup1"><a class="text-muted" href="https://in.linkedin.com/company/c-helix" target="_blank"><img src="linkedin-in-brands.svg" alt="Linkedin" srcset="" width="27" height="27"></a></li>
+          <li class="ms-3 add addup1"><a class="text-muted" href="https://www.instagram.com/c_helix/" target="_blank"><img src="instagram-brands.svg" alt="Instagram" srcset="" width="27" height="27"></a></li>
+          <li class="ms-3 add addup1"><a class="text-muted" href="https://www.youtube.com/channel/UCY5ePLaZypiWV1WBZJ-Bfig" target="_blank"><img src="youtube-brands.svg" alt="YouTube" srcset="" width="27" height="27"></li></a>
         </ul>
         <div class="addup">
             <p class="float-end mb-1 ">
-                <a class="text-muted" href="#"><img src="up.svg" alt="Facebook" srcset="" width="30" height="30"></a>
+                <a class="text-muted" href="#"><img src="up.svg" alt="up" srcset="" width="27" height="27"></a>
               </p>
         </div>
       </footer>
@@ -553,7 +571,7 @@ body .footer {
 
 <footer>
         <div class="center">
-            Made with ❤ by C-Helix.
+           Made with ❤ by <a style="text-decoration: none" class="backlink" href="#"><span class="myfooter">C-</span><span class="my1footer">Helix.</span></a>
         </div>
     </footer>
   </body>
